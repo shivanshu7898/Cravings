@@ -1,48 +1,89 @@
-header img{
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+header {
+  background-color: #c2410c;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+header img {
   width: 30%;
   height: 90%;
-padding-left: 50px;
+  padding-left: 50px;
 }
-header{
-   background-color: #c2410c;
 
+#Register {
+  border: 1px solid #c2410c;
+  background: white;
+  color: #c2410c;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  transition: 0.5s;
 }
-#Register{
-     border:1px solid #c2410c;
-     background: white;
-     color: #c2410c;
-     border-radius: 5px;
-     padding-bottom: 5px;
-     padding-left: 10px;
-     padding-right: 10px;
-     margin-top: 5px;
-     transition: 0.5s;
+#Register:hover {
+  background-color: #c2410c;
+  border-color: white;
+  color: white;
+}
+#login {
+  background: transparent;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+#login:hover {
+  border: 1px solid white;
+  border-color: white;
+}
+.hero-banner {
+  background: url(../CravingWeb/pics/image.png) no-repeat center center/cover;
 
-}
-#Register:hover
-{
-    background-color: #c2410c;
-    border-color: white;
-    color: white;
-}
-#login{
-    
-   
-    background: transparent;
-     color: white;
-     border: 0px;
-     border-radius: 5px;
-     padding-bottom: 5px;
-     padding-left: 10px;
-     padding-right: 10px;
-     margin-top: 5px;
-     margin-right: 5px;
-     transition: 0.5s;
-
-}
-#login:hover
-{
-    border: 1px solid white;
-    border-color: white;
   
 }
+  
+
+.container {
+  
+  height: 100vh;
+  padding-top: 150px;
+  
+}
+#singUp {
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+#singUp:hover {
+}
+#order {
+  border: 1px solid black;
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+#order:hover {
+}
+.bg-gradient {
+  width: 100%;                
+  min-height: 100vh;          
+  background: linear-gradient(
+    180deg,
+    rgba(194, 65, 12, 1) 0%,   
+    rgba(255, 255, 255, 1) 100% 
+  ) !important;               
+}
+
