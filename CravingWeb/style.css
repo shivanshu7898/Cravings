@@ -1,7 +1,6 @@
-*
-{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 header {
   background-color: #c2410c;
@@ -51,15 +50,11 @@ header img {
   background: url(../CravingWeb/pics/image.png) no-repeat center center/cover;
 
   height: 90vh;
-  
 }
-  
 
 .container {
-  
   height: 100vh;
   padding-top: 150px;
-  
 }
 #singUp {
   height: 50px;
@@ -73,29 +68,57 @@ header img {
 #singUp:hover {
 }
 #order {
-  border: 1px solid black;
+
+
   width: 130px;
   height: 50px;
   border-radius: 10px;
   margin-top: 20px;
   border: none;
-  padding-top: 5px;
-}
-#order:hover {
-}
-.bg-gradient {
-  width: 100%;                
-  min-height: 100vh;          
-  background: linear-gradient(
-    180deg,
-    rgba(194, 65, 12, 1) 0%,   
-    rgba(255, 255, 255, 1) 100% 
-  ) !important;               
+  padding-top: 10px;
+  background: white;
 }
 
-.Explore
-{
+
+
+#order:hover {
+}
+.d-block{
+  height: 90vh;
+}
+.bg-gradient {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(194, 65, 12, 1) 80%,
+    rgba(255, 255, 255, 1) 100%
+  ) !important;
+}
+#search-main::placeholder {
+  color: #c2410c;
+}
+
+.Explore {
   background-color: #c2410c;
   border: none;
   color: white;
 }
+
+.Card1 {
+  transition: transform 0.2s ease;
+  transform-style: preserve-3d;
+}
+.Card1:hover {
+  transform: scale(1.1);
+}
+
+.Card2 {
+  transition: transform 0.4s ease;
+  box-shadow: 0px 0px 5px lightgrey;
+  border: none;
+}
+.Card2:hover {
+  box-shadow: 0px 0px 10px lightgrey;
+}
+

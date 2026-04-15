@@ -34,43 +34,120 @@
     </header>
     <main>
       <div
-        class="hero-banner d-flex justify-content-center align-content-center m-lg-0 py-lg-5"
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
       >
-        <div class="w-75 p-lg-5">
-          <div class="d-flex justify-content-center text-center">
-            <h1 class="fw-bolder text-light h1 mt-lg-5">
-              Your Favorite Food,<br />Delivered Fast
-            </h1>
-          </div>
-          <div>
-            <p class="fs-4 d-flex justify-content-center text-white">
-              Order from thousands of restaurants and get it delivered to your
-              doorstep
-            </p>
-          </div>
-          <div class="d-flex justify-content-center gap-3">
-            <div>
-              <button id="singUp"><b>Sign Up</b></button>
-            </div>
-            <div>
-              <button id="order"><h6>Order Now</h6></button>
-            </div>
-          </div>
-
-          <div class="position-relative m-lg-5">
-            <i
-              class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-2"
-            ></i>
-
-            <input 
-              type="text"
-              class="form-control ps-5 p-2 mt-5 border-0"
-              placeholder="Search restaurants or dishes "
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../CravingWeb/pics/IMG-20260413-WA0004.jpg.jpeg"
+              class="d-block w-100"
+              alt="..."
             />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../CravingWeb/pics/IMG-20260413-WA0005.jpg.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../CravingWeb/pics/IMG-20260413-WA0016.jpg.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Overlay content -->
+      <div class="carousel-caption align-items-center p-5">
+        <div class="p-5">
+          <div class="p-4">
+            <div>
+              <h1 class="fw-bolder text-light">
+                Your Favorite Food,<br />Delivered Fast
+              </h1>
+            </div>
+            <div>
+              <p class="fs-4 text-white">
+                Order from thousands of restaurants and get it delivered to your
+                doorstep
+              </p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="d-flex gap-3">
+                <div>
+                  <button id="singUp"><b>Sign Up</b></button>
+                </div>
+                <div>
+                  <button id="order"><h6>Order Now</h6></button>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex m-4 p-2">
+              <div>
+                <input
+                  type="text"
+                  id="search-main"
+                  placeholder="Search restaurants or dishes "
+                  style="
+                    width: 700px;
+                    padding: 8px;
+                    border-radius: 10px;
+                    border: none;
+                  "
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- ....... -->
       <div class="bg-gradient p-5">
         <div>
           <div class="ms-lg-5">
@@ -78,7 +155,7 @@
             <p class="text-light">3 restaurants available</p>
           </div>
           <div class="d-flex justify-content-center">
-            <div class="rounded-4 m-4 w-25 bg-light">
+            <div class="Card1 rounded-4 m-4 w-25 bg-light">
               <div>
                 <div>
                   <img
@@ -88,30 +165,36 @@
                   />
                 </div>
               </div>
-              <div>
-                <h5 class="fw-bold p-2">Under The Mango Tree</h5>
-                <p class="p-2">
-                  Enjoy the thrill og grill and barbecue at Under The Mango Tree
-                  restaurant at jehan Numa Palace, Bhopal. <br />
-                  Head here now!
-                </p>
+              <div class="p-2">
+                <div>
+                  <h5 class="fw-bold p-2">Under The Mango Tree</h5>
+                  <p class="p-2">
+                    Enjoy the thrill og grill and barbecue at Under The Mango
+                    Tree restaurant at jehan Numa Palace, Bhopal. <br />
+                    Head here now!
+                  </p>
+                </div>
+                <div class="d-flex gap-2 m-2">
+                  <div>
+                    <button class="rounded-2 border border-0">Indian</button>
+                  </div>
+                  <div>
+                    <button class="rounded-2 border border-0">Chineese</button>
+                  </div>
+                  <div>
+                    <button class="rounded-2 border border-0">Ittalian</button>
+                  </div>
+                </div>
               </div>
-              <div class="d-flex gap-2 m-2">
+              <div class="p-3">
                 <div>
-                  <button class="rounded-2 border border-0">Indian</button>
+                  <button class="Explore w-100 rounded-2 p-2 mt-2">
+                    Explore Menu
+                  </button>
                 </div>
-                <div>
-                  <button class="rounded-2 border border-0">Chineese</button>
-                </div>
-                <div>
-                  <button class="rounded-2 border border-0">Ittalian</button>
-                </div>
-              </div>
-              <div>
-                <button class=" Explore w-100 rounded-2 p-2 mt-2">Explore Menu</button>
               </div>
             </div>
-            <div class="rounded-4 m-4 w-25 bg-light">
+            <div class="Card1 rounded-4 m-4 w-25 bg-light">
               <div>
                 <img
                   class="w-100 h-25 rounded-top-4"
@@ -119,32 +202,38 @@
                   alt=""
                 />
               </div>
-              <div class="bg-light">
-                <h5 class="fw-bold p-2">Raj darbar</h5>
-                <p class="p-2">
-                  Raj Darbar is a one-of-a kind indian restaurant that offers a
-                  unique <br />
-                  dining experieance for families and friends with a dhaba-style
-                  theme
-                </p>
+              <div class="p-2">
+                <div class="bg-light">
+                  <h5 class="fw-bold p-1">Raj darbar</h5>
+                  <p class="p-1">
+                    Raj Darbar is a one-of-a kind indian restaurant that offers
+                    a unique <br />
+                    dining experieance for families and friends with a
+                    dhaba-style theme
+                  </p>
+                </div>
+                <div class="d-flex gap-2 bg-light">
+                  <div>
+                    <button class="rounded-2 border border-0">Indian</button>
+                  </div>
+                  <div>
+                    <button class="rounded-2 border border-0">Chineese</button>
+                  </div>
+                  <div>
+                    <button class="rounded-2 border border-0">Ittalian</button>
+                  </div>
+                </div>
               </div>
-              <div class="d-flex gap-2 m-2 bg-light">
+              <div class="p-3">
                 <div>
-                  <button class="rounded-2 border border-0">Indian</button>
+                  <button class="Explore w-100 rounded-2 p-2 mb-2">
+                    Explore Menu
+                  </button>
                 </div>
-                <div>
-                  <button class="rounded-2 border border-0">Chineese</button>
-                </div>
-                <div>
-                  <button class="rounded-2 border border-0">Ittalian</button>
-                </div>
-              </div>
-              <div>
-                <button class=" Explore w-100 rounded-2 p-2 mb-2">Explore Menu</button>
               </div>
             </div>
 
-            <div class="rounded-4 m-4 w-25 bg-light">
+            <div class="Card1 rounded-4 m-4 w-25 bg-light">
               <div class="d-flex">
                 <div>
                   <img
@@ -154,31 +243,164 @@
                   />
                 </div>
               </div>
-              <div>
-                <h4 class="fw-bold p-2">Countryside Culture</h4>
-                <p class="p-2">
-                  A hidden gem away from the city, offering lush green meadows
-                  and
-                  <br />
-                  peaceful walking paths for relaxation
-                </p>
-              </div>
-              <div class="d-flex gap-2 m-3">
+              <div class="p-2">
                 <div>
-                  <button class="rounded-2 border border-0">Chineese</button>
+                  <h4 class="fw-bold p-1">Countryside Culture</h4>
+                  <p class="p-1">
+                    A hidden gem away from the city, offering lush green meadows
+                    and
+                    <br />
+                    peaceful walking paths for relaxation
+                  </p>
                 </div>
-                <div>
-                  <button class="rounded-2 border border-0">Indian</button>
+                <div class="d-flex gap-2 p-1">
+                  <div>
+                    <button class="rounded-2 border border-0">Chineese</button>
+                  </div>
+                  <div>
+                    <button class="rounded-2 border border-0">Indian</button>
+                  </div>
                 </div>
               </div>
-              <div>
-                <button class=" Explore w-100 rounded-2 p-2 mb-2">Explore Menu</button>
+              <div class="p-3">
+                <div>
+                  <button class="Explore w-100 rounded-2 p-2">
+                    Explore Menu
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+<!-- .... -->
+        <div class="">
+        <div>
+          <div class="ms-lg-5">
+            <h2 class="fw-bolder text-light"></h2>
+            <p class="text-light"></p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="Card1 rounded-4 m-4 w-25 bg-light">
+              <div>
+                <div>
+                  <img
+                    class="w-100 rounded-top-4"
+                    src="../CravingWeb/pics/IMG-20260413-WA0016.jpg.jpeg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="p-2">
+                <div>
+                  <h5 class="fw-bold p-2">Under The Mango Tree</h5>
+                  <p class="p-2">
+                    Enjoy the thrill og grill and barbecue at Under The Mango
+                    Tree restaurant at jehan Numa Palace, Bhopal. <br />
+                    Head here now!
+                  </p>
+                </div>
+                <div class="d-flex gap-2 m-2">
+                  <div>
+                    <button class="rounded-2 border border-0">Indian</button>
+                  </div>
+                  <div>
+                    <button class="rounded-2 border border-0">Chineese</button>
+                  </div>
+                  <div>
+                    <button class="rounded-2 border border-0">Ittalian</button>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3">
+                <div>
+                  <button class="Explore w-100 rounded-2 p-2 mt-2">
+                    Explore Menu
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="Card1 rounded-4 m-4 w-25 bg-light">
+              <div>
+                <img
+                  class="w-100 h-25 rounded-top-4"
+                  src="../CravingWeb/pics/HOTEL/RAJ.png"
+                  alt=""
+                />
+              </div>
+              <div class="p-2">
+                <div class="bg-light">
+                  <h5 class="fw-bold p-1">Raj darbar</h5>
+                  <p class="p-1">
+                    Raj Darbar is a one-of-a kind indian restaurant that offers
+                    a unique <br />
+                    dining experieance for families and friends with a
+                    dhaba-style theme
+                  </p>
+                </div>
+                <div class="d-flex gap-2 bg-light">
+                  <div>
+                    <button class="rounded-2 border border-0">Indian</button>
+                  </div>
+                  <div>
+                    <button class="rounded-2 border border-0">Chineese</button>
+                  </div>
+                  <div>
+                    <button class="rounded-2 border border-0">Ittalian</button>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3">
+                <div>
+                  <button class="Explore w-100 rounded-2 p-2 mb-2">
+                    Explore Menu
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="Card1 rounded-4 m-4 w-25 bg-light">
+              <div class="d-flex">
+                <div>
+                  <img
+                    class="w-100 rounded-top-4"
+                    src="../CravingWeb/pics/HOTEL/image.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="p-2">
+                <div>
+                  <h4 class="fw-bold p-1">Countryside Culture</h4>
+                  <p class="p-1">
+                    A hidden gem away from the city, offering lush green meadows
+                    and
+                    <br />
+                    peaceful walking paths for relaxation
+                  </p>
+                </div>
+                <div class="d-flex gap-2 p-1">
+                  <div>
+                    <button class="rounded-2 border border-0">Chineese</button>
+                  </div>
+                  <div>
+                    <button class="rounded-2 border border-0">Indian</button>
+                  </div>
+                </div>
+              </div>
+              <div class="p-3">
+                <div>
+                  <button class="Explore w-100 rounded-2 p-2">
+                    Explore Menu
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- ...... -->
       <div
         class="d-flex justify-content-center"
         style="background-color: #fff8f1"
@@ -192,7 +414,7 @@
           </div>
           <div class="d-flex gap-4">
             <div
-              class="d-flex justify-content-center text-center border border-1 bg-white rounded-3 shadow"
+              class="Card2 d-flex justify-content-center text-center bg-white rounded-3"
             >
               <div class="m-4">
                 <h1 class="fw-bold" style="color: #c2410c">2.5M+</h1>
@@ -205,7 +427,7 @@
             </div>
 
             <div
-              class="d-flex justify-content-center text-center border border-1 bg-white rounded-3 shadow"
+              class="Card2 d-flex justify-content-center text-center bg-white rounded-3"
             >
               <div class="m-4">
                 <h1 class="fw-bold" style="color: #d9468f">500k+</h1>
@@ -218,7 +440,7 @@
             </div>
 
             <div
-              class="d-flex justify-content-center text-center border border-1 bg-white rounded-3 shadow"
+              class="Card2 d-flex justify-content-center text-center bg-white rounded-3"
             >
               <div class="m-4">
                 <h1 class="fw-bold" style="color: #c2410c">5k+</h1>
@@ -231,7 +453,7 @@
             </div>
 
             <div
-              class="d-flex justify-content-center text-center border border-1 bg-white rounded-3 shadow"
+              class="Card2 d-flex justify-content-center text-center bg-white rounded-3"
             >
               <div class="m-4">
                 <h1 class="fw-bold" style="color: #d9468f">2.5M+</h1>
@@ -256,10 +478,7 @@
             </div>
           </div>
           <div class="d-flex gap-4">
-            <div
-              class="border border-1 rounded-3 shadow"
-              style="background-color: #fff8f1"
-            >
+            <div class="Card2 rounded-3" style="background-color: #fff8f1">
               <div class="m-4">
                 <span style="color: gold; font-size: 24px">
                   &#9733; &#9733; &#9733; &#9733; &#9733;
@@ -272,7 +491,8 @@
                   impressed with Cravings Service!"
                 </p>
                 <div class="d-flex justify-content-start">
-                  <div class="border border-1 p-2 rounded-5 me-2">
+                  <div class="border border-1 p-2 rounded-5 me-2" style="background-color: #c2410c;color: white;"
+                    >
                     <h5>AJ</h5>
                   </div>
                   <div>
@@ -285,10 +505,7 @@
               </div>
             </div>
 
-            <div
-              class="border border-1 rounded-3 shadow"
-              style="background-color: #fff8f1"
-            >
+            <div class="Card2 rounded-3" style="background-color: #fff8f1">
               <div class="m-4" style="background-color: #fff8f1">
                 <span style="color: gold; font-size: 24px">
                   &#9733; &#9733; &#9733; &#9733; &#9733;
@@ -301,7 +518,11 @@
                   from Cravings every week!"
                 </p>
                 <div class="d-flex justify-content-start">
-                  <div class="border border-1 p-2 rounded-5 me-2">
+                  <div
+                    class=" p-2 rounded-circle me-2"
+                    style="background-color: #d9468f;color: white;"
+                    ;
+                  >
                     <h5>SP</h5>
                   </div>
                   <div>
@@ -314,10 +535,7 @@
               </div>
             </div>
 
-            <div
-              class="border border-1 rounded-3 shadow"
-              style="background-color: #fff8f1"
-            >
+            <div class="Card2 rounded-3" style="background-color: #fff8f1">
               <div class="m-4">
                 <span style="color: gold; font-size: 24px">
                   &#9733; &#9733; &#9733; &#9733; &#9733;
@@ -330,7 +548,8 @@
                   through Cravings. Definitely worth it!"
                 </p>
                 <div class="d-flex justify-content-start">
-                  <div class="border border-1 p-2 rounded-5 me-2">
+                  <div class="border border-1 p-2 rounded-5 me-2" style="background-color: #c2410c;color: white;"
+                    ;>
                     <h5>RK</h5>
                   </div>
                   <div>
@@ -371,19 +590,19 @@
         </div>
       </div>
       <!-- ............ -->
-      <div class="d-flex justify-content-center" style="background-color: #3f3f46;">
-        <div class="  p-5">
+      <div
+        class="d-flex justify-content-center"
+        style="background-color: #3f3f46"
+      >
+        <div class="p-5">
           <div class="text-center m-4">
             <h5 class="text-white">
               --- Your favorite food delivery platform connecting customers with
               restaurants and riders. --
             </h5>
           </div>
-          <div
-            class="d-flex justify-content-center "
-          >
-          
-            <div class=" w-25">
+          <div class="d-flex justify-content-center">
+            <div class="w-25">
               <img
                 src="../CravingWeb/pics/footerpic.jpeg"
                 alt=""
@@ -391,44 +610,100 @@
               />
             </div>
             <div class="">
-              <div class=" p-5">
+              <div class="p-5">
                 <h4 class="text-white">Quick Links</h4>
-                <div><button class="border-0 bg-transparent text-white">Home</button></div>
-                <div><button class="border-0 bg-transparent text-white">About</button></div>
-                <div><button class="border-0 bg-transparent text-white">Oder Now</button></div>
+                <div>
+                  <button class="border-0 bg-transparent text-white">
+                    Home
+                  </button>
+                </div>
+                <div>
+                  <button class="border-0 bg-transparent text-white">
+                    About
+                  </button>
+                </div>
+                <div>
+                  <button class="border-0 bg-transparent text-white">
+                    Oder Now
+                  </button>
+                </div>
               </div>
             </div>
             <div class="p-5">
               <div>
                 <h4 class="text-white">Quick Links</h4>
-                <div><button class="border-0 bg-transparent text-white">Home</button></div>
-                <div><button class="border-0 bg-transparent text-white">About</button></div>
-                <div><button class="border-0 bg-transparent text-white">Oder Now</button></div>
+                <div>
+                  <button class="border-0 bg-transparent text-white">
+                    Home
+                  </button>
+                </div>
+                <div>
+                  <button class="border-0 bg-transparent text-white">
+                    About
+                  </button>
+                </div>
+                <div>
+                  <button class="border-0 bg-transparent text-white">
+                    Oder Now
+                  </button>
+                </div>
               </div>
             </div>
             <div class="p-5">
               <div>
                 <h4 class="text-white">For Riders</h4>
-                <div><button class="border-0 bg-transparent text-white">Become a Rider</button></div>
-                <div><button class="border-0 bg-transparent text-white">Rider Dashboard</button></div>
+                <div>
+                  <button class="border-0 bg-transparent text-white">
+                    Become a Rider
+                  </button>
+                </div>
+                <div>
+                  <button class="border-0 bg-transparent text-white">
+                    Rider Dashboard
+                  </button>
+                </div>
               </div>
             </div>
             <div class="p-5">
               <div>
                 <h4 class="text-white">Feedback & Support</h4>
-                <div><button class="border-0 bg-transparent text-white">Submit Feedback</button></div>
-                <div><button class="border-0 bg-transparent text-white">Help Center</button></div>
-                <div><button class="border-0 bg-transparent text-white">Contact Us</button></div>
+                <div>
+                  <button class="border-0 bg-transparent text-white">
+                    Submit Feedback
+                  </button>
+                </div>
+                <div>
+                  <button class="border-0 bg-transparent text-white">
+                    Help Center
+                  </button>
+                </div>
+                <div>
+                  <button class="border-0 bg-transparent text-white">
+                    Contact Us
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <hr class="text-white">
+          <hr class="text-white" />
           <div class="d-flex justify-content-between p-3">
             <div class="text-white">© 2026 Cravings. All rights reserved</div>
-            <div class="d-flex ">
-              <div><button class="border-0 bg-transparent p-1 text-white">Privacy Policy</button></div>
-              <div><button class="border-0 bg-transparent p-1 text-white">Terms of Service</button></div>
-              <div><button class="border-0 bg-transparent m-1 text-white">Site Map</button></div>
+            <div class="d-flex">
+              <div>
+                <button class="border-0 bg-transparent p-1 text-white">
+                  Privacy Policy
+                </button>
+              </div>
+              <div>
+                <button class="border-0 bg-transparent p-1 text-white">
+                  Terms of Service
+                </button>
+              </div>
+              <div>
+                <button class="border-0 bg-transparent m-1 text-white">
+                  Site Map
+                </button>
+              </div>
             </div>
           </div>
         </div>
