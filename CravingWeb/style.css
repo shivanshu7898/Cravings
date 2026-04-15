@@ -50,6 +50,7 @@ header img {
 .hero-banner {
   background: url(../CravingWeb/pics/image.png) no-repeat center center/cover;
 
+  height: 90vh;
   
 }
   
@@ -61,19 +62,24 @@ header img {
   
 }
 #singUp {
-  height: 40px;
+  height: 50px;
   width: 100px;
   border-radius: 10px;
   margin-top: 20px;
+  color: white;
+  background-color: #c2410c;
+  border: none;
 }
 #singUp:hover {
 }
 #order {
   border: 1px solid black;
   width: 130px;
-  height: 40px;
+  height: 50px;
   border-radius: 10px;
   margin-top: 20px;
+  border: none;
+  padding-top: 5px;
 }
 #order:hover {
 }
@@ -87,3 +93,9 @@ header img {
   ) !important;               
 }
 
+.Explore
+{
+  background-color: #c2410c;
+  border: none;
+  color: white;
+}
