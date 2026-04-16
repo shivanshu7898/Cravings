@@ -36,12 +36,12 @@ header img {
   color: white;
   border: 0px;
   border-radius: 5px;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 5px;
-  margin-right: 5px;
-  transition: 0.5s;
+ padding: 4px;
+ margin-top: 1px;
+ margin-right: 5px;
+ width: 80px;
+  transition: 0.5s ;
+  
 }
 #login:hover {
   border: 1px solid white;
@@ -50,7 +50,7 @@ header img {
 .hero-banner {
   background: url(../CravingWeb/pics/image.png) no-repeat center center/cover;
 
-  height: 90vh;
+  height: 100vh;
 }
 
 .container {
@@ -65,8 +65,13 @@ header img {
   color: white;
   background-color: #c2410c;
   border: none;
+   transition: 0.5s ;
 }
 #singUp:hover {
+   background-color: #9a3710;
+  
+  
+
 }
 #order {
 

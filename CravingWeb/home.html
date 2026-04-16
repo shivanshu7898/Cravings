@@ -20,16 +20,18 @@
     <header>
       <div class="d-flex justify-content-between">
         <div>
-          <img
-            class="img-fluid"
-            src="https://cravings.ricr.in/assets/transparentLogoLight-De2Z7I01.png"
-            alt="logo"
-          />
+          <a href="../CravingWeb/home.html"
+            ><img
+              src="https://cravings.ricr.in/assets/transparentLogoLight-De2Z7I01.png"
+              alt="logo"
+          /></a>
         </div>
         <div
           class="d-flex justify-content-center align-content-center m-3 pe-5"
         >
-          <div><button id="login">Login</button></div>
+          <button id="login" onclick="window.location.href = 'login.html'">
+            login
+          </button>
           <button
             id="Register"
             onclick="window.location.href = 'register.html'"
@@ -130,7 +132,12 @@
             <div class="d-flex justify-content-center">
               <div class="d-flex gap-3">
                 <div>
-                  <button id="singUp"><b>Sign Up</b></button>
+                  <button
+                    id="singUp"
+                    onclick="window.location.href = 'register.html'"
+                  >
+                    sing Up
+                  </button>
                 </div>
                 <div>
                   <button id="order"><h6>Order Now</h6></button>
