@@ -79,8 +79,8 @@ header img {
   background: white;
 }
 
-#order:hover {
-}
+
+
 .d-block {
   height: 90vh;
 }
@@ -89,7 +89,7 @@ header img {
   min-height: 100vh;
   background: linear-gradient(
     180deg,
-    rgba(194, 65, 12, 1) 80%,
+    rgba(194, 65, 12, 1) 20%,
     rgba(255, 255, 255, 1) 100%
   ) !important;
 }
@@ -144,7 +144,24 @@ header img {
 }
 .SearchOder{
   position: sticky;
-  top: -4px;
+  top: 0px;
   z-index: 80;
   background-color: white;
+}
+
+.Additem
+{
+  background-color: #c2410c;
+  color: white;
+  width: 120px;
+  padding: 10px;
+  border: none;
+border-radius: 10px;
+}
+.aboutBanner
+{
+  background-image: url(../CravingWeb/pics/About.jpeg);
+
+  width: 100%;
+
 }
