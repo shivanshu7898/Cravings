@@ -36,12 +36,11 @@ header img {
   color: white;
   border: 0px;
   border-radius: 5px;
- padding: 4px;
- margin-top: 1px;
- margin-right: 5px;
- width: 80px;
-  transition: 0.5s ;
-  
+  padding: 4px;
+  margin-top: 1px;
+  margin-right: 5px;
+  width: 80px;
+  transition: 0.5s;
 }
 #login:hover {
   border: 1px solid white;
@@ -65,31 +64,24 @@ header img {
   color: white;
   background-color: #c2410c;
   border: none;
-   transition: 0.5s ;
+  transition: 0.5s;
 }
 #singUp:hover {
-   background-color: #9a3710;
-  
-  
-
+  background-color: #9a3710;
 }
 #order {
-
-
   width: 130px;
   height: 50px;
   border-radius: 10px;
   margin-top: 20px;
   border: none;
-  padding-top: 10px;
+  
   background: white;
 }
 
-
-
 #order:hover {
 }
-.d-block{
+.d-block {
   height: 90vh;
 }
 .bg-gradient {
@@ -138,7 +130,7 @@ header img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: black; 
+  background: black;
   z-index: 1;
 }
 
@@ -146,14 +138,13 @@ header img {
   position: relative;
   z-index: 0;
 }
-.foodTable{
-  background-image: url(../CravingWeb/pics/HOTEL/Screenshot\ 2026-04-16\ 004104.png) ;
+.foodTable {
+  background-image: url(../CravingWeb/pics/HOTEL/Screenshot\ 2026-04-16\ 004104.png);
   width: 100%;
- 
- 
-  
 }
-
-
-
-
+.SearchOder{
+  position: sticky;
+  top: -4px;
+  z-index: 80;
+  background-color: white;
+}
