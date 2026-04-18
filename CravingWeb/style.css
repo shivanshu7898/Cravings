@@ -167,3 +167,12 @@ header img {
 .contact{
   background-image: url(./pics/contactpage.jpeg);
 }
+.help{
+  background-image: url(./pics/helpdesk.jpeg);
+
+}
+.helpdash
+{
+  background: rgba(0, 0, 0, 0.6);
+  
+}
