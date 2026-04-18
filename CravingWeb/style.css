@@ -75,11 +75,9 @@ header img {
   border-radius: 10px;
   margin-top: 20px;
   border: none;
-  
+
   background: white;
 }
-
-
 
 .d-block {
   height: 90vh;
@@ -142,26 +140,30 @@ header img {
   background-image: url(../CravingWeb/pics/HOTEL/Screenshot\ 2026-04-16\ 004104.png);
   width: 100%;
 }
-.SearchOder{
+.SearchOder {
   position: sticky;
   top: 0px;
   z-index: 80;
   background-color: white;
 }
 
-.Additem
-{
+.Additem {
   background-color: #c2410c;
   color: white;
   width: 120px;
   padding: 10px;
   border: none;
-border-radius: 10px;
+  border-radius: 10px;
 }
-.aboutBanner
-{
-  background-image: url(../CravingWeb/pics/About.jpeg);
+.aboutBanner {
+  background-image: url(../CravingWeb/pics/About.JPG);
 
   width: 100%;
-
+}
+.feedback 
+{
+  background-image: url(../CravingWeb/pics/FeedbackPage.jpeg);
+}
+.contact{
+  background-image: url(./pics/contactpage.jpeg);
 }
