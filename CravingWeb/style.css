@@ -160,24 +160,31 @@ header img {
 
   width: 100%;
 }
-.feedback 
-{
+.feedback {
   background-image: url(../CravingWeb/pics/FeedbackPage.jpeg);
 }
-.contact{
+.contact {
   background-image: url(./pics/contactpage.jpeg);
 }
-.help{
+.help {
   background-image: url(./pics/helpdesk.jpeg);
-
 }
-.helpdash
-{
+.helpdash {
   background: rgba(0, 0, 0, 0.6);
- 
-  
 }
-.privacy
-{
+.privacy {
   background-image: url(../CravingWeb/pics/privacy2.PNG);
+}
+
+.colorHover {
+  color: #d27d5c;
+}
+.colorHover:hover {
+  color: ;
+}
+.footerColor{
+  color: white;
+}
+.footerColor:hover{
+  color: #c2410c;
 }
