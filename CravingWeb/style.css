@@ -9,9 +9,7 @@ header {
   z-index: 99;
 }
 header img {
-  width: 30%;
-  height: 90%;
-  padding-left: 50px;
+  width: 100px;
 }
 
 #Register {
@@ -180,11 +178,11 @@ header img {
   color: #d27d5c;
 }
 .colorHover:hover {
-  color: ;
+  color:#c2410c ;
 }
 .footerColor{
   color: white;
 }
 .footerColor:hover{
-  color: #c2410c;
+  color:#c2410c ;
 }
