@@ -1,0 +1,12 @@
+{
+  "name": "cravings-web",
+  "version": "1.0.0",
+  "description": "Cravings website with a simple backend API and client-side JavaScript.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

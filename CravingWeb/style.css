@@ -1,4 +1,4 @@
-* {
+﻿* {
   margin: 0px;
   padding: 0px;
 }
@@ -45,7 +45,7 @@ header img {
   border-color: white;
 }
 .hero-banner {
-  background: url(../CravingWeb/pics/image.png) no-repeat center center/cover;
+  background: url(pics/image.png) no-repeat center center/cover;
 
   height: 100vh;
 }
@@ -135,7 +135,7 @@ header img {
   z-index: 0;
 }
 .foodTable {
-  background-image: url(../CravingWeb/pics/HOTEL/Screenshot\ 2026-04-16\ 004104.png);
+  background-image: url(pics/HOTEL/Screenshot\ 2026-04-16\ 004104.png);
   width: 100%;
 }
 .SearchOder {
@@ -154,12 +154,12 @@ header img {
   border-radius: 10px;
 }
 .aboutBanner {
-  background-image: url(../CravingWeb/pics/About.JPG);
+  background-image: url(pics/About.JPG);
 
   width: 100%;
 }
 .feedback {
-  background-image: url(../CravingWeb/pics/FeedbackPage.jpeg);
+  background-image: url(pics/FeedbackPage.jpeg);
 }
 .contact {
   background-image: url(./pics/contactpage.jpeg);
@@ -171,7 +171,7 @@ header img {
   background: rgba(0, 0, 0, 0.6);
 }
 .privacy {
-  background-image: url(../CravingWeb/pics/privacy2.PNG);
+  background-image: url(pics/privacy2.PNG);
 }
 
 .colorHover {
@@ -186,3 +186,4 @@ header img {
 .footerColor:hover{
   color:#c2410c ;
 }
+

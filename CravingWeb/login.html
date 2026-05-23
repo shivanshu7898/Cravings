@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,7 +22,7 @@
         <div>
           <a class="navbar-brand" href="home.html">
             <img
-              src="../CravingWeb/pics/transparentLogoLight-De2Z7I01.png"
+              src="pics/transparentLogoLight-De2Z7I01.png"
               alt="CravingWeb Logo"
               ,
               class="ms-3"
@@ -59,6 +59,7 @@
 
             <div class="border-secondary d-flex gap-3">
               <input
+                id="loginEmail"
                 type="email"
                 class="form-control"
                 placeholder="Enter Your Email"
@@ -67,9 +68,10 @@
 
             <div class="border-secondary d-flex gap-2">
               <input
+                id="loginPassword"
                 type="password"
                 class="form-control input-group"
-                placeholder="Create Your password"
+                placeholder="Enter Your password"
               />
             </div>
 
@@ -85,11 +87,12 @@
               </div>
             </div>
 
-            <button class="Explore p-2 rounded-3">Login</button>
+            <button type="button" id="loginSubmit" class="Explore p-2 rounded-3">Login</button>
+            <div id="loginMessage" class="text-center mt-2"></div>
             <div class="text-center gap-2">
               <div>Don't have an account</div>
               <div>
-                <a href="#" class="text-danger text-decoration-none"
+                <a href="register.html" class="text-danger text-decoration-none"
                   >Create an account</a
                 >
               </div>
@@ -114,7 +117,7 @@
           <div class="d-flex justify-content-center">
             <div class="w-25">
               <img
-                src="../CravingWeb/pics/footerpic.jpeg"
+                src="pics/footerpic.jpeg"
                 alt=""
                 class="w-50 rounded-circle"
               />
@@ -223,12 +226,12 @@
           </div>
           <hr class="text-white" />
           <div class="d-flex justify-content-between p-3">
-            <div class="text-white">© 2026 Cravings. All rights reserved</div>
+            <div class="text-white">Â© 2026 Cravings. All rights reserved</div>
             <div class="d-flex">
               <div>
                 <a
                   class="border-0 text-decoration-none p-2 footerColor"
-                  href="../CravingWeb/privacy.html"
+                  href="privacy.html"
                   >Privacy Policy</a
                 >
               </div>
@@ -257,5 +260,9 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
+
+
+

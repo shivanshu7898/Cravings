@@ -1,0 +1,7 @@
+[
+  { "name": "Butter Chicken", "price": 320, "image": "pics/HOTEL/RAJ.png", "createdAt": "2026-05-23T00:00:00.000Z" },
+  { "name": "Paneer Butter Masala", "price": 220, "image": "pics/HOTEL/UnderTree.png", "createdAt": "2026-05-23T00:00:00.000Z" },
+  { "name": "Masala Dosa", "price": 140, "image": "pics/IMG-20260413-WA0016.jpg.jpeg", "createdAt": "2026-05-23T00:00:00.000Z" },
+  { "name": "Chole Bhature", "price": 110, "image": "pics/HOTEL/image.png", "createdAt": "2026-05-23T00:00:00.000Z" },
+  { "name": "Hyderabadi Biryani", "price": 350, "image": "pics/HOTEL/Screenshot_15-4-2026_231142_www.bing.com.jpeg", "createdAt": "2026-05-23T00:00:00.000Z" }
+]
