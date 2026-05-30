@@ -127,6 +127,55 @@ const initRatingStars = () => {
   });
 };
 
+const bindAddItemButtons = () => {
+  const buttons = document.querySelectorAll('.Additem');
+  if (!buttons.length) return;
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      button.textContent = 'Added';
+      button.disabled = true;
+      button.classList.add('btn', 'btn-success');
+      button.classList.remove('btn-outline-secondary');
+      showMessage('exploreMessage', 'Item Added', 'success');
+    });
+  });
+};
+
+const initRestaurantSearch = () => {
+  const input = document.getElementById('restaurantSearch');
+  const countElement = document.getElementById('restaurantCount');
+  const cards = Array.from(document.querySelectorAll('.rounded-4.m-4.w-25.bg-light'));
+  if (!input || !cards.length) return;
+
+  const updateCount = () => {
+    if (!countElement) return;
+    const visible = cards.filter(card => card.style.display !== 'none');
+    countElement.textContent = `${visible.length} restaurants available`;
+  };
+
+  input.addEventListener('input', () => {
+    const query = input.value.trim().toLowerCase();
+    cards.forEach((card) => {
+      const name = card.querySelector('h5')?.textContent.trim().toLowerCase() || '';
+      const match = !query || name.includes(query);
+      card.style.display = match ? '' : 'none';
+    });
+    updateCount();
+  });
+
+  updateCount();
+};
+
+const initHomeSearchRedirect = () => {
+  const homeSearchInput = document.getElementById('search-main');
+  if (!homeSearchInput) return;
+  const redirect = () => {
+    window.location.href = 'order.html';
+  };
+  homeSearchInput.addEventListener('focus', redirect);
+  homeSearchInput.addEventListener('click', redirect);
+};
+
 window.addEventListener('DOMContentLoaded', () => {
   bindButton('loginSubmit', handleLogin);
   bindButton('registerSubmit', handleRegister);
@@ -134,6 +183,9 @@ window.addEventListener('DOMContentLoaded', () => {
   bindButton('feedbackSubmit', handleFeedback);
   bindButton('supportSubmit', handleSupport);
   initRatingStars();
+  bindAddItemButtons();
+  initRestaurantSearch();
+  initHomeSearchRedirect();
   // menu page bindings
   bindButton('addMenuSubmit', handleAddMenu);
   // load menu if container present

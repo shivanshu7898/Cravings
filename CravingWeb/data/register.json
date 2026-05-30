@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "name": "shivanshu soni",
+    "email": "sonishivanshu7898163335@gmail.com",
+    "phone": "08109324600",
+    "role": "customer",
+    "createdAt": "2026-05-30T08:24:14.177Z"
+  },
+  {
+    "name": "sonishivanshu7898163335@gmail.com",
+    "email": "sonishivanshu7898163335@gmail.com",
+    "phone": "8109324600",
+    "role": "customer",
+    "createdAt": "2026-05-30T12:55:27.707Z"
+  }
+]
